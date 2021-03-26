@@ -19,7 +19,6 @@ window.addEventListener("load", () => {
             latitude = myPosition.coords.latitude;
             //API from Open weather
             const api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=087d977a44c8cf143f0a013b4665d112`;
-
             fetch(api)
                 .then((info) => {
                     return info.json()
@@ -31,18 +30,13 @@ window.addEventListener("load", () => {
                     let cityWeatherDesc = data.weather[0].description;
                     let cityWeatherIcon = data.weather[0].icon;
                     let cityWeatherIconUrl = `https://openweathermap.org/img/wn/${cityWeatherIcon}@2x.png`;
-
                     //Set weather elements using DOM Selectors from variables
                     city.textContent = cityName;
                     degree.textContent = cityTemp - 273.15;  //Converting Kelvin to Celsius
                     degree.textContent = Math.floor(degree.textContent);
                     description.textContent = cityWeatherDesc;
-
                     //get icon from Open weather
                     icon.outerHTML = `<img src="${cityWeatherIconUrl}" alt="icon" class="icon">`;
-
-                    console.log(data);
-                    
                 });
         });
     } else {

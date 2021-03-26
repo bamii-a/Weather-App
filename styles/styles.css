@@ -25,6 +25,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .show-day {
@@ -61,8 +63,20 @@ body {
 }
 
 .weather-location .icon {
-  font-size: 5rem;
   min-width: 12rem;
+}
+
+@media screen and (max-width: 991px) {
+  .weather-location h1 {
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+  }
+  .weather-location .icon {
+    min-width: 5rem;
+  }
+  .temp .description {
+    font-size: 1rem;
+  }
 }
 
 .temp {
