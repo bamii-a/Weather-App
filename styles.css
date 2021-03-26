@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(36, 149, 255), rgb(96, 218, 255));
+    color: white;
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+.weather-location, .temp{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+    width: 40%;
+}
+.weather-location h1{
+    letter-spacing: 5px;
+}
+
+.temp{
+    flex-direction: column;
+}
+.temp h2{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.temp h2 span {
+    font-size: 1.5rem;
+}

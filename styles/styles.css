@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.show-day {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2495ff), to(#60daff));
+  background: linear-gradient(#2495ff, #60daff);
+}
+
+.show-night {
+  background: url(../images/bg-stars.svg), -webkit-gradient(linear, left top, left bottom, from(#021024), to(#003c80));
+  background: url(../images/bg-stars.svg), linear-gradient(#021024, #003c80);
+}
+
+.weather-location,
+.temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30vh;
+  width: 40%;
+}
+
+.weather-location h1 {
+  letter-spacing: 5px;
+  font-size: 2.5rem;
+}
+
+.weather-location .icon {
+  font-size: 5rem;
+  min-width: 12rem;
+}
+
+.temp {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.temp .degree-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.temp .degree-content h2 {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.temp .degree-content span {
+  size: 1.5rem;
+}
+
+.temp h3 {
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=styles.css.map */
