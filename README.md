@@ -15,7 +15,7 @@ Users should be able to:
 - Desktop-first workflow
 
 ### Project Site
-- Hosted on Netlify - [WeatherApp](https://jolly-swartz-66f3e2.netlify.app/)
+- Hosted on Netlify - [WeatherApp](https://bamii-weatherapp.netlify.app/)
 
 ### Author
 - Website - [Bamii](https://github.com/bamii-a)
